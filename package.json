@@ -1,0 +1,12 @@
+{
+  "name": "autoagent-test",
+  "version": "1.0.0",
+  "description": "Test repository for AutoAgent",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node tests/test-example.js"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
