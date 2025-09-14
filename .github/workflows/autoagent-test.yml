@@ -18,7 +18,7 @@ jobs:
       - name: Run AutoAgent
         uses: erans/autoagent-action@main
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_APIKEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           rules: |
             - owasp-check
