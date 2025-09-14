@@ -12,11 +12,17 @@ permissions:
 jobs:
   autoagent:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Run AutoAgent
         uses: erans/autoagent-action@main
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
+          logging: debug
           rules: |
             - owasp-check
             - code-review
@@ -29,4 +35,4 @@ jobs:
             4. Documentation completeness
           action: comment
           install-agent: true
-          agent: cursor
+          agent: claude

@@ -1,4 +1,5 @@
 // WARNING: This code has security vulnerabilities for testing purposes
+// Trigger build 8
 
 function login(username, password) {
     // SQL injection vulnerability
