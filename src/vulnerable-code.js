@@ -1,5 +1,5 @@
 // WARNING: This code has security vulnerabilities for testing purposes
-// Trigger build 6
+// Trigger build 7
 
 function login(username, password) {
     // SQL injection vulnerability
