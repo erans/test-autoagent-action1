@@ -18,7 +18,7 @@ jobs:
       - name: Run AutoAgent
         uses: erans/autoagent-action@main
         env:
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_APIKEY }}
         with:
           rules: |
             - owasp-check
@@ -32,4 +32,4 @@ jobs:
             4. Documentation completeness
           action: comment
           install-agent: true
-          agent: cursor
+          agent: claude
