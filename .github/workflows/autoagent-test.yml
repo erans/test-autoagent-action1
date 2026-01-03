@@ -12,6 +12,7 @@ permissions:
 jobs:
   autoagent:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - uses: actions/checkout@v4
       - name: Run AutoAgent
